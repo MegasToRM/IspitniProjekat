@@ -15,5 +15,10 @@ namespace IspitniProjekat
         {
             InitializeComponent();
         }
+
+        public override bool MozeSeSacuvati()
+        {
+            return true;
+        }
     }
 }

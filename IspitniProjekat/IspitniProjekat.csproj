@@ -90,6 +90,7 @@
     <Compile Include="Forme\GlavnaForma.Designer.cs">
       <DependentUpon>GlavnaForma.cs</DependentUpon>
     </Compile>
+    <Compile Include="Klase\DBManager.cs" />
     <Compile Include="Klase\ListaAtributa.cs" />
     <Compile Include="Forme\MestoForma.cs">
       <SubType>Form</SubType>
@@ -97,6 +98,7 @@
     <Compile Include="Forme\MestoForma.Designer.cs">
       <DependentUpon>MestoForma.cs</DependentUpon>
     </Compile>
+    <Compile Include="Klase\Podesavanja.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forme\EntForma.resx">
       <DependentUpon>EntForma.cs</DependentUpon>

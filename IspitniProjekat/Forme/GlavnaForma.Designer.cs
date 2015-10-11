@@ -33,15 +33,13 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.uiStyleManager = new MetroFramework.Components.MetroStyleManager(this.components);
-            this.panListaTabela = new MetroFramework.Controls.MetroPanel();
-            this.metroComboBox1 = new MetroFramework.Controls.MetroComboBox();
             this.panGlavniMeni = new MetroFramework.Controls.MetroPanel();
             this.btnObrisi = new MetroFramework.Controls.MetroButton();
+            this.panListaTabela = new MetroFramework.Controls.MetroPanel();
+            this.grPrikazPodataka = new MetroFramework.Controls.MetroGrid();
             this.btnIzmeni = new MetroFramework.Controls.MetroButton();
             this.btnDodaj = new MetroFramework.Controls.MetroButton();
-            this.grPrikazPodataka = new MetroFramework.Controls.MetroGrid();
             ((System.ComponentModel.ISupportInitialize)(this.uiStyleManager)).BeginInit();
-            this.panListaTabela.SuspendLayout();
             this.panGlavniMeni.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grPrikazPodataka)).BeginInit();
             this.SuspendLayout();
@@ -51,53 +49,18 @@
             this.uiStyleManager.Owner = this;
             this.uiStyleManager.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
-            // panListaTabela
-            // 
-            this.panListaTabela.Controls.Add(this.metroComboBox1);
-            this.panListaTabela.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panListaTabela.HorizontalScrollbar = true;
-            this.panListaTabela.HorizontalScrollbarBarColor = true;
-            this.panListaTabela.HorizontalScrollbarHighlightOnWheel = false;
-            this.panListaTabela.HorizontalScrollbarSize = 10;
-            this.panListaTabela.Location = new System.Drawing.Point(5, 60);
-            this.panListaTabela.Name = "panListaTabela";
-            this.panListaTabela.Size = new System.Drawing.Size(144, 427);
-            this.panListaTabela.TabIndex = 0;
-            this.panListaTabela.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.panListaTabela.VerticalScrollbar = true;
-            this.panListaTabela.VerticalScrollbarBarColor = true;
-            this.panListaTabela.VerticalScrollbarHighlightOnWheel = false;
-            this.panListaTabela.VerticalScrollbarSize = 10;
-            // 
-            // metroComboBox1
-            // 
-            this.metroComboBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.metroComboBox1.FormattingEnabled = true;
-            this.metroComboBox1.ItemHeight = 23;
-            this.metroComboBox1.Items.AddRange(new object[] {
-            "A",
-            "B",
-            "C",
-            "D",
-            "E"});
-            this.metroComboBox1.Location = new System.Drawing.Point(0, 0);
-            this.metroComboBox1.Name = "metroComboBox1";
-            this.metroComboBox1.Size = new System.Drawing.Size(144, 29);
-            this.metroComboBox1.TabIndex = 2;
-            this.metroComboBox1.UseSelectable = true;
-            // 
             // panGlavniMeni
             // 
-            this.panGlavniMeni.Controls.Add(this.btnObrisi);
-            this.panGlavniMeni.Controls.Add(this.btnIzmeni);
             this.panGlavniMeni.Controls.Add(this.btnDodaj);
+            this.panGlavniMeni.Controls.Add(this.btnIzmeni);
+            this.panGlavniMeni.Controls.Add(this.btnObrisi);
             this.panGlavniMeni.Dock = System.Windows.Forms.DockStyle.Top;
             this.panGlavniMeni.HorizontalScrollbarBarColor = true;
             this.panGlavniMeni.HorizontalScrollbarHighlightOnWheel = false;
             this.panGlavniMeni.HorizontalScrollbarSize = 10;
-            this.panGlavniMeni.Location = new System.Drawing.Point(149, 60);
+            this.panGlavniMeni.Location = new System.Drawing.Point(5, 60);
             this.panGlavniMeni.Name = "panGlavniMeni";
-            this.panGlavniMeni.Size = new System.Drawing.Size(782, 29);
+            this.panGlavniMeni.Size = new System.Drawing.Size(926, 29);
             this.panGlavniMeni.TabIndex = 1;
             this.panGlavniMeni.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.panGlavniMeni.VerticalScrollbarBarColor = true;
@@ -106,10 +69,10 @@
             // 
             // btnObrisi
             // 
-            this.btnObrisi.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnObrisi.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnObrisi.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnObrisi.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.btnObrisi.Location = new System.Drawing.Point(296, 0);
+            this.btnObrisi.Location = new System.Drawing.Point(778, 0);
             this.btnObrisi.Name = "btnObrisi";
             this.btnObrisi.Size = new System.Drawing.Size(148, 29);
             this.btnObrisi.TabIndex = 4;
@@ -119,35 +82,22 @@
             this.btnObrisi.UseSelectable = true;
             this.btnObrisi.Click += new System.EventHandler(this.btnObrisi_Click);
             // 
-            // btnIzmeni
+            // panListaTabela
             // 
-            this.btnIzmeni.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnIzmeni.FontSize = MetroFramework.MetroButtonSize.Tall;
-            this.btnIzmeni.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.btnIzmeni.Location = new System.Drawing.Point(148, 0);
-            this.btnIzmeni.Name = "btnIzmeni";
-            this.btnIzmeni.Size = new System.Drawing.Size(148, 29);
-            this.btnIzmeni.TabIndex = 3;
-            this.btnIzmeni.TabStop = false;
-            this.btnIzmeni.Text = "Izmeni";
-            this.btnIzmeni.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.btnIzmeni.UseSelectable = true;
-            this.btnIzmeni.Click += new System.EventHandler(this.btnIzmeni_Click);
-            // 
-            // btnDodaj
-            // 
-            this.btnDodaj.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnDodaj.FontSize = MetroFramework.MetroButtonSize.Tall;
-            this.btnDodaj.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.btnDodaj.Location = new System.Drawing.Point(0, 0);
-            this.btnDodaj.Name = "btnDodaj";
-            this.btnDodaj.Size = new System.Drawing.Size(148, 29);
-            this.btnDodaj.TabIndex = 2;
-            this.btnDodaj.TabStop = false;
-            this.btnDodaj.Text = "Dodaj";
-            this.btnDodaj.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.btnDodaj.UseSelectable = true;
-            this.btnDodaj.Click += new System.EventHandler(this.btnDodaj_Click);
+            this.panListaTabela.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panListaTabela.HorizontalScrollbar = true;
+            this.panListaTabela.HorizontalScrollbarBarColor = true;
+            this.panListaTabela.HorizontalScrollbarHighlightOnWheel = false;
+            this.panListaTabela.HorizontalScrollbarSize = 10;
+            this.panListaTabela.Location = new System.Drawing.Point(5, 89);
+            this.panListaTabela.Name = "panListaTabela";
+            this.panListaTabela.Size = new System.Drawing.Size(144, 398);
+            this.panListaTabela.TabIndex = 3;
+            this.panListaTabela.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.panListaTabela.VerticalScrollbar = true;
+            this.panListaTabela.VerticalScrollbarBarColor = true;
+            this.panListaTabela.VerticalScrollbarHighlightOnWheel = false;
+            this.panListaTabela.VerticalScrollbarSize = 10;
             // 
             // grPrikazPodataka
             // 
@@ -191,8 +141,36 @@
             this.grPrikazPodataka.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.grPrikazPodataka.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grPrikazPodataka.Size = new System.Drawing.Size(782, 398);
-            this.grPrikazPodataka.TabIndex = 2;
+            this.grPrikazPodataka.TabIndex = 4;
             this.grPrikazPodataka.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
+            // btnIzmeni
+            // 
+            this.btnIzmeni.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnIzmeni.FontSize = MetroFramework.MetroButtonSize.Tall;
+            this.btnIzmeni.FontWeight = MetroFramework.MetroButtonWeight.Regular;
+            this.btnIzmeni.Location = new System.Drawing.Point(630, 0);
+            this.btnIzmeni.Name = "btnIzmeni";
+            this.btnIzmeni.Size = new System.Drawing.Size(148, 29);
+            this.btnIzmeni.TabIndex = 6;
+            this.btnIzmeni.TabStop = false;
+            this.btnIzmeni.Text = "Izmeni";
+            this.btnIzmeni.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.btnIzmeni.UseSelectable = true;
+            // 
+            // btnDodaj
+            // 
+            this.btnDodaj.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnDodaj.FontSize = MetroFramework.MetroButtonSize.Tall;
+            this.btnDodaj.FontWeight = MetroFramework.MetroButtonWeight.Regular;
+            this.btnDodaj.Location = new System.Drawing.Point(482, 0);
+            this.btnDodaj.Name = "btnDodaj";
+            this.btnDodaj.Size = new System.Drawing.Size(148, 29);
+            this.btnDodaj.TabIndex = 7;
+            this.btnDodaj.TabStop = false;
+            this.btnDodaj.Text = "Dodaj";
+            this.btnDodaj.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.btnDodaj.UseSelectable = true;
             // 
             // GlavnaForma
             // 
@@ -201,8 +179,8 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(936, 492);
             this.Controls.Add(this.grPrikazPodataka);
-            this.Controls.Add(this.panGlavniMeni);
             this.Controls.Add(this.panListaTabela);
+            this.Controls.Add(this.panGlavniMeni);
             this.ForeColor = System.Drawing.Color.White;
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.MaximizeBox = false;
@@ -214,7 +192,6 @@
             this.Text = "Ispitni projekat";
             this.Theme = MetroFramework.MetroThemeStyle.Dark;
             ((System.ComponentModel.ISupportInitialize)(this.uiStyleManager)).EndInit();
-            this.panListaTabela.ResumeLayout(false);
             this.panGlavniMeni.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grPrikazPodataka)).EndInit();
             this.ResumeLayout(false);
@@ -223,13 +200,12 @@
 
         #endregion
         private MetroFramework.Components.MetroStyleManager uiStyleManager;
-        private MetroFramework.Controls.MetroPanel panListaTabela;
-        private MetroFramework.Controls.MetroGrid grPrikazPodataka;
         private MetroFramework.Controls.MetroPanel panGlavniMeni;
         private MetroFramework.Controls.MetroButton btnObrisi;
-        private MetroFramework.Controls.MetroButton btnIzmeni;
+        private MetroFramework.Controls.MetroGrid grPrikazPodataka;
+        private MetroFramework.Controls.MetroPanel panListaTabela;
         private MetroFramework.Controls.MetroButton btnDodaj;
-        private MetroFramework.Controls.MetroComboBox metroComboBox1;
+        private MetroFramework.Controls.MetroButton btnIzmeni;
     }
 }
 
