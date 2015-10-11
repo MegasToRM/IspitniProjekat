@@ -28,7 +28,7 @@ namespace IspitniProjekat
         }
 
         public object VrednostAtributa => Vrednost;
-
+        public TipPodatka TipPodatkaAtributa => TipAtributa;
         public string AsString() => Vrednost.ToString();
 
         public double AsDouble()
