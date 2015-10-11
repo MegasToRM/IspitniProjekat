@@ -62,6 +62,7 @@
             this.btnOtkazi.Text = "Otkazi";
             this.btnOtkazi.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.btnOtkazi.UseSelectable = true;
+            this.btnOtkazi.Click += new System.EventHandler(this.btnOtkazi_Click);
             // 
             // btnSacuvaj
             // 
@@ -74,6 +75,7 @@
             this.btnSacuvaj.Text = "Sacuvaj";
             this.btnSacuvaj.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.btnSacuvaj.UseSelectable = true;
+            this.btnSacuvaj.Click += new System.EventHandler(this.btnSacuvaj_Click);
             // 
             // EntForma
             // 

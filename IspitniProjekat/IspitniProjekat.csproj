@@ -77,26 +77,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Atribut.cs" />
-    <Compile Include="EntForma.cs">
+    <Compile Include="Klase\Atribut.cs" />
+    <Compile Include="Forme\EntForma.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EntForma.Designer.cs">
+    <Compile Include="Forme\EntForma.Designer.cs">
       <DependentUpon>EntForma.cs</DependentUpon>
     </Compile>
-    <Compile Include="GlavnaForma.cs">
+    <Compile Include="Forme\GlavnaForma.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GlavnaForma.Designer.cs">
+    <Compile Include="Forme\GlavnaForma.Designer.cs">
       <DependentUpon>GlavnaForma.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListaAtributa.cs" />
+    <Compile Include="Klase\ListaAtributa.cs" />
+    <Compile Include="Forme\MestoForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\MestoForma.Designer.cs">
+      <DependentUpon>MestoForma.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="EntForma.resx">
+    <EmbeddedResource Include="Forme\EntForma.resx">
       <DependentUpon>EntForma.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GlavnaForma.resx">
+    <EmbeddedResource Include="Forme\GlavnaForma.resx">
       <DependentUpon>GlavnaForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\MestoForma.resx">
+      <DependentUpon>MestoForma.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -40,7 +40,7 @@ namespace IspitniProjekat
 
         private void btnDodaj_Click(object sender, EventArgs e)
         {
-            var f = new EntForma();
+            var f = new MestoForma();
             f.Show();
         }
 
