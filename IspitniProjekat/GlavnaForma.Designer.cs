@@ -113,6 +113,7 @@
             this.btnObrisi.Name = "btnObrisi";
             this.btnObrisi.Size = new System.Drawing.Size(148, 29);
             this.btnObrisi.TabIndex = 4;
+            this.btnObrisi.TabStop = false;
             this.btnObrisi.Text = "Obrisi";
             this.btnObrisi.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.btnObrisi.UseSelectable = true;
@@ -127,6 +128,7 @@
             this.btnIzmeni.Name = "btnIzmeni";
             this.btnIzmeni.Size = new System.Drawing.Size(148, 29);
             this.btnIzmeni.TabIndex = 3;
+            this.btnIzmeni.TabStop = false;
             this.btnIzmeni.Text = "Izmeni";
             this.btnIzmeni.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.btnIzmeni.UseSelectable = true;
@@ -141,6 +143,7 @@
             this.btnDodaj.Name = "btnDodaj";
             this.btnDodaj.Size = new System.Drawing.Size(148, 29);
             this.btnDodaj.TabIndex = 2;
+            this.btnDodaj.TabStop = false;
             this.btnDodaj.Text = "Dodaj";
             this.btnDodaj.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.btnDodaj.UseSelectable = true;

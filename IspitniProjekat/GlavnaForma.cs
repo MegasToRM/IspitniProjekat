@@ -40,6 +40,8 @@ namespace IspitniProjekat
 
         private void btnDodaj_Click(object sender, EventArgs e)
         {
+            var f = new EntForma();
+            f.Show();
         }
 
         /*private void metroButton2_Click(object sender, EventArgs e)
