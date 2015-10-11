@@ -26,11 +26,11 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        protected void InitializeComponent()
         {
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
-            this.btnOtkazi = new MetroFramework.Controls.MetroButton();
             this.btnSacuvaj = new MetroFramework.Controls.MetroButton();
+            this.btnOtkazi = new MetroFramework.Controls.MetroButton();
             this.metroPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,19 +51,6 @@
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel1.VerticalScrollbarSize = 10;
             // 
-            // btnOtkazi
-            // 
-            this.btnOtkazi.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnOtkazi.Location = new System.Drawing.Point(416, 0);
-            this.btnOtkazi.Name = "btnOtkazi";
-            this.btnOtkazi.Size = new System.Drawing.Size(135, 41);
-            this.btnOtkazi.TabIndex = 2;
-            this.btnOtkazi.TabStop = false;
-            this.btnOtkazi.Text = "Otkazi";
-            this.btnOtkazi.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.btnOtkazi.UseSelectable = true;
-            this.btnOtkazi.Click += new System.EventHandler(this.btnOtkazi_Click);
-            // 
             // btnSacuvaj
             // 
             this.btnSacuvaj.Dock = System.Windows.Forms.DockStyle.Right;
@@ -76,6 +63,19 @@
             this.btnSacuvaj.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.btnSacuvaj.UseSelectable = true;
             this.btnSacuvaj.Click += new System.EventHandler(this.btnSacuvaj_Click);
+            // 
+            // btnOtkazi
+            // 
+            this.btnOtkazi.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnOtkazi.Location = new System.Drawing.Point(416, 0);
+            this.btnOtkazi.Name = "btnOtkazi";
+            this.btnOtkazi.Size = new System.Drawing.Size(135, 41);
+            this.btnOtkazi.TabIndex = 2;
+            this.btnOtkazi.TabStop = false;
+            this.btnOtkazi.Text = "Otkazi";
+            this.btnOtkazi.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.btnOtkazi.UseSelectable = true;
+            this.btnOtkazi.Click += new System.EventHandler(this.btnOtkazi_Click);
             // 
             // EntForma
             // 
@@ -97,7 +97,7 @@
         #endregion
 
         private MetroFramework.Controls.MetroPanel metroPanel1;
-        private MetroFramework.Controls.MetroButton btnSacuvaj;
-        private MetroFramework.Controls.MetroButton btnOtkazi;
+        protected MetroFramework.Controls.MetroButton btnSacuvaj;
+        protected MetroFramework.Controls.MetroButton btnOtkazi;
     }
 }

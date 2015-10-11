@@ -1,4 +1,4 @@
-﻿namespace IspitniProjekat
+﻿namespace IspitniProjekat.Forme
 {
     partial class MestoForma
     {
@@ -36,14 +36,22 @@
             this.metroComboBox1 = new MetroFramework.Controls.MetroComboBox();
             this.SuspendLayout();
             // 
+            // btnSacuvaj
+            // 
+            this.btnSacuvaj.Location = new System.Drawing.Point(148, 0);
+            // 
+            // btnOtkazi
+            // 
+            this.btnOtkazi.Location = new System.Drawing.Point(283, 0);
+            // 
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(27, 74);
+            this.metroLabel1.Location = new System.Drawing.Point(89, 78);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(70, 19);
+            this.metroLabel1.Size = new System.Drawing.Size(41, 19);
             this.metroLabel1.TabIndex = 1;
-            this.metroLabel1.Text = "Ime mesta";
+            this.metroLabel1.Text = "Naziv";
             this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
             // txtNaziv
@@ -52,16 +60,16 @@
             // 
             // 
             this.txtNaziv.CustomButton.Image = null;
-            this.txtNaziv.CustomButton.Location = new System.Drawing.Point(182, 2);
+            this.txtNaziv.CustomButton.Location = new System.Drawing.Point(222, 1);
             this.txtNaziv.CustomButton.Name = "";
-            this.txtNaziv.CustomButton.Size = new System.Drawing.Size(19, 19);
+            this.txtNaziv.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtNaziv.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtNaziv.CustomButton.TabIndex = 1;
             this.txtNaziv.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtNaziv.CustomButton.UseSelectable = true;
             this.txtNaziv.CustomButton.Visible = false;
             this.txtNaziv.Lines = new string[0];
-            this.txtNaziv.Location = new System.Drawing.Point(27, 96);
+            this.txtNaziv.Location = new System.Drawing.Point(89, 100);
             this.txtNaziv.MaxLength = 32767;
             this.txtNaziv.Name = "txtNaziv";
             this.txtNaziv.PasswordChar = '\0';
@@ -69,9 +77,8 @@
             this.txtNaziv.SelectedText = "";
             this.txtNaziv.SelectionLength = 0;
             this.txtNaziv.SelectionStart = 0;
-            this.txtNaziv.Size = new System.Drawing.Size(204, 24);
+            this.txtNaziv.Size = new System.Drawing.Size(244, 23);
             this.txtNaziv.TabIndex = 2;
-            this.txtNaziv.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.txtNaziv.UseSelectable = true;
             this.txtNaziv.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtNaziv.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -82,16 +89,16 @@
             // 
             // 
             this.txtPostanski.CustomButton.Image = null;
-            this.txtPostanski.CustomButton.Location = new System.Drawing.Point(182, 2);
+            this.txtPostanski.CustomButton.Location = new System.Drawing.Point(222, 1);
             this.txtPostanski.CustomButton.Name = "";
-            this.txtPostanski.CustomButton.Size = new System.Drawing.Size(19, 19);
+            this.txtPostanski.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtPostanski.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtPostanski.CustomButton.TabIndex = 1;
             this.txtPostanski.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtPostanski.CustomButton.UseSelectable = true;
             this.txtPostanski.CustomButton.Visible = false;
             this.txtPostanski.Lines = new string[0];
-            this.txtPostanski.Location = new System.Drawing.Point(27, 161);
+            this.txtPostanski.Location = new System.Drawing.Point(89, 158);
             this.txtPostanski.MaxLength = 32767;
             this.txtPostanski.Name = "txtPostanski";
             this.txtPostanski.PasswordChar = '\0';
@@ -99,9 +106,8 @@
             this.txtPostanski.SelectedText = "";
             this.txtPostanski.SelectionLength = 0;
             this.txtPostanski.SelectionStart = 0;
-            this.txtPostanski.Size = new System.Drawing.Size(204, 24);
+            this.txtPostanski.Size = new System.Drawing.Size(244, 23);
             this.txtPostanski.TabIndex = 4;
-            this.txtPostanski.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.txtPostanski.UseSelectable = true;
             this.txtPostanski.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtPostanski.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -109,7 +115,7 @@
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(27, 139);
+            this.metroLabel2.Location = new System.Drawing.Point(89, 136);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(89, 19);
             this.metroLabel2.TabIndex = 3;
@@ -119,33 +125,27 @@
             // metroLabel3
             // 
             this.metroLabel3.AutoSize = true;
-            this.metroLabel3.Location = new System.Drawing.Point(27, 199);
+            this.metroLabel3.Location = new System.Drawing.Point(89, 201);
             this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(49, 19);
+            this.metroLabel3.Size = new System.Drawing.Size(89, 19);
             this.metroLabel3.TabIndex = 5;
-            this.metroLabel3.Text = "Drzava";
+            this.metroLabel3.Text = "Postanski broj";
             this.metroLabel3.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
             // metroComboBox1
             // 
             this.metroComboBox1.FormattingEnabled = true;
             this.metroComboBox1.ItemHeight = 23;
-            this.metroComboBox1.Items.AddRange(new object[] {
-            "Srbija",
-            "Bosna i Hercegovina",
-            "Crna Gora",
-            "Nemacka"});
-            this.metroComboBox1.Location = new System.Drawing.Point(27, 221);
+            this.metroComboBox1.Location = new System.Drawing.Point(89, 223);
             this.metroComboBox1.Name = "metroComboBox1";
-            this.metroComboBox1.Size = new System.Drawing.Size(204, 29);
+            this.metroComboBox1.Size = new System.Drawing.Size(244, 29);
             this.metroComboBox1.TabIndex = 6;
             this.metroComboBox1.UseSelectable = true;
             // 
             // MestoForma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(479, 437);
+            this.ClientSize = new System.Drawing.Size(428, 397);
             this.Controls.Add(this.metroComboBox1);
             this.Controls.Add(this.metroLabel3);
             this.Controls.Add(this.txtPostanski);

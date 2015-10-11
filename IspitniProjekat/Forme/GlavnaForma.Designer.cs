@@ -34,11 +34,11 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.uiStyleManager = new MetroFramework.Components.MetroStyleManager(this.components);
             this.panGlavniMeni = new MetroFramework.Controls.MetroPanel();
+            this.btnDodaj = new MetroFramework.Controls.MetroButton();
+            this.btnIzmeni = new MetroFramework.Controls.MetroButton();
             this.btnObrisi = new MetroFramework.Controls.MetroButton();
             this.panListaTabela = new MetroFramework.Controls.MetroPanel();
             this.grPrikazPodataka = new MetroFramework.Controls.MetroGrid();
-            this.btnIzmeni = new MetroFramework.Controls.MetroButton();
-            this.btnDodaj = new MetroFramework.Controls.MetroButton();
             ((System.ComponentModel.ISupportInitialize)(this.uiStyleManager)).BeginInit();
             this.panGlavniMeni.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grPrikazPodataka)).BeginInit();
@@ -66,6 +66,36 @@
             this.panGlavniMeni.VerticalScrollbarBarColor = true;
             this.panGlavniMeni.VerticalScrollbarHighlightOnWheel = false;
             this.panGlavniMeni.VerticalScrollbarSize = 10;
+            // 
+            // btnDodaj
+            // 
+            this.btnDodaj.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnDodaj.FontSize = MetroFramework.MetroButtonSize.Tall;
+            this.btnDodaj.FontWeight = MetroFramework.MetroButtonWeight.Regular;
+            this.btnDodaj.Location = new System.Drawing.Point(482, 0);
+            this.btnDodaj.Name = "btnDodaj";
+            this.btnDodaj.Size = new System.Drawing.Size(148, 29);
+            this.btnDodaj.TabIndex = 7;
+            this.btnDodaj.TabStop = false;
+            this.btnDodaj.Text = "Dodaj";
+            this.btnDodaj.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.btnDodaj.UseSelectable = true;
+            this.btnDodaj.Click += new System.EventHandler(this.btnDodaj_Click);
+            // 
+            // btnIzmeni
+            // 
+            this.btnIzmeni.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnIzmeni.FontSize = MetroFramework.MetroButtonSize.Tall;
+            this.btnIzmeni.FontWeight = MetroFramework.MetroButtonWeight.Regular;
+            this.btnIzmeni.Location = new System.Drawing.Point(630, 0);
+            this.btnIzmeni.Name = "btnIzmeni";
+            this.btnIzmeni.Size = new System.Drawing.Size(148, 29);
+            this.btnIzmeni.TabIndex = 6;
+            this.btnIzmeni.TabStop = false;
+            this.btnIzmeni.Text = "Izmeni";
+            this.btnIzmeni.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.btnIzmeni.UseSelectable = true;
+            this.btnIzmeni.Click += new System.EventHandler(this.btnIzmeni_Click);
             // 
             // btnObrisi
             // 
@@ -143,34 +173,6 @@
             this.grPrikazPodataka.Size = new System.Drawing.Size(782, 398);
             this.grPrikazPodataka.TabIndex = 4;
             this.grPrikazPodataka.Theme = MetroFramework.MetroThemeStyle.Dark;
-            // 
-            // btnIzmeni
-            // 
-            this.btnIzmeni.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnIzmeni.FontSize = MetroFramework.MetroButtonSize.Tall;
-            this.btnIzmeni.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.btnIzmeni.Location = new System.Drawing.Point(630, 0);
-            this.btnIzmeni.Name = "btnIzmeni";
-            this.btnIzmeni.Size = new System.Drawing.Size(148, 29);
-            this.btnIzmeni.TabIndex = 6;
-            this.btnIzmeni.TabStop = false;
-            this.btnIzmeni.Text = "Izmeni";
-            this.btnIzmeni.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.btnIzmeni.UseSelectable = true;
-            // 
-            // btnDodaj
-            // 
-            this.btnDodaj.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnDodaj.FontSize = MetroFramework.MetroButtonSize.Tall;
-            this.btnDodaj.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.btnDodaj.Location = new System.Drawing.Point(482, 0);
-            this.btnDodaj.Name = "btnDodaj";
-            this.btnDodaj.Size = new System.Drawing.Size(148, 29);
-            this.btnDodaj.TabIndex = 7;
-            this.btnDodaj.TabStop = false;
-            this.btnDodaj.Text = "Dodaj";
-            this.btnDodaj.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.btnDodaj.UseSelectable = true;
             // 
             // GlavnaForma
             // 
